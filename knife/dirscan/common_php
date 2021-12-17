@@ -1,0 +1,17 @@
+# FFUF Report
+
+  Command line : `ffuf -u http://10.10.10.242/FUZZ -w /usr/share/wordlists/dirb/common.txt -of md -e php -o dirscan/common_php`
+  Time: 2021-06-26T14:44:26-04:00
+
+  | FUZZ | URL | Redirectlocation | Position | Status Code | Content Length | Content Words | Content Lines | Content Type | ResultFile |
+  | :- | :-- | :--------------- | :---- | :------- | :---------- | :------------- | :------------ | :--------- | :----------- |
+  | .hta | http://10.10.10.242/.hta |  | 21 | 403 | 277 | 20 | 10 | text/html; charset=iso-8859-1 |  |
+  | .htaphp | http://10.10.10.242/.htaphp |  | 22 | 403 | 277 | 20 | 10 | text/html; charset=iso-8859-1 |  |
+  | .htaccess | http://10.10.10.242/.htaccess |  | 23 | 403 | 277 | 20 | 10 | text/html; charset=iso-8859-1 |  |
+  | .htpasswdphp | http://10.10.10.242/.htpasswdphp |  | 26 | 403 | 277 | 20 | 10 | text/html; charset=iso-8859-1 |  |
+  | .htpasswd | http://10.10.10.242/.htpasswd |  | 25 | 403 | 277 | 20 | 10 | text/html; charset=iso-8859-1 |  |
+  | .htaccessphp | http://10.10.10.242/.htaccessphp |  | 24 | 403 | 277 | 20 | 10 | text/html; charset=iso-8859-1 |  |
+  |  | http://10.10.10.242/ |  | 1 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | index.php | http://10.10.10.242/index.php |  | 4041 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | server-status | http://10.10.10.242/server-status |  | 7175 | 403 | 277 | 20 | 10 | text/html; charset=iso-8859-1 |  |
+  

@@ -1,0 +1,14 @@
+# FFUF Report
+
+  Command line : `ffuf -u http://10.10.10.242/FUZZ -w /usr/share/wordlists/dirb/common.txt -of md -o dirscan/common.log -fc 404`
+  Time: 2021-06-26T14:41:28-04:00
+
+  | FUZZ | URL | Redirectlocation | Position | Status Code | Content Length | Content Words | Content Lines | Content Type | ResultFile |
+  | :- | :-- | :--------------- | :---- | :------- | :---------- | :------------- | :------------ | :--------- | :----------- |
+  | .hta | http://10.10.10.242/.hta |  | 11 | 403 | 277 | 20 | 10 | text/html; charset=iso-8859-1 |  |
+  | .htaccess | http://10.10.10.242/.htaccess |  | 12 | 403 | 277 | 20 | 10 | text/html; charset=iso-8859-1 |  |
+  | .htpasswd | http://10.10.10.242/.htpasswd |  | 13 | 403 | 277 | 20 | 10 | text/html; charset=iso-8859-1 |  |
+  |  | http://10.10.10.242/ |  | 1 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | index.php | http://10.10.10.242/index.php |  | 2021 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | server-status | http://10.10.10.242/server-status |  | 3588 | 403 | 277 | 20 | 10 | text/html; charset=iso-8859-1 |  |
+  

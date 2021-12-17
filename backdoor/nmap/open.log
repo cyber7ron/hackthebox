@@ -1,0 +1,54 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-12-06 14:13 EST
+Initiating Ping Scan at 14:13
+Scanning 10.10.11.125 [2 ports]
+Completed Ping Scan at 14:13, 0.50s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 14:13
+Completed Parallel DNS resolution of 1 host. at 14:13, 5.56s elapsed
+Initiating Connect Scan at 14:13
+Scanning 10.10.11.125 [8340 ports]
+Discovered open port 80/tcp on 10.10.11.125
+Discovered open port 22/tcp on 10.10.11.125
+Increasing send delay for 10.10.11.125 from 0 to 5 due to max_successful_tryno increase to 4
+Connect Scan Timing: About 6.51% done; ETC: 14:21 (0:07:25 remaining)
+Connect Scan Timing: About 21.58% done; ETC: 14:18 (0:03:42 remaining)
+Connect Scan Timing: About 32.94% done; ETC: 14:18 (0:03:05 remaining)
+Increasing send delay for 10.10.11.125 from 5 to 10 due to max_successful_tryno increase to 5
+Connect Scan Timing: About 46.19% done; ETC: 14:17 (0:02:21 remaining)
+Increasing send delay for 10.10.11.125 from 10 to 20 due to max_successful_tryno increase to 6
+Increasing send delay for 10.10.11.125 from 20 to 40 due to max_successful_tryno increase to 7
+Connect Scan Timing: About 57.13% done; ETC: 14:18 (0:02:05 remaining)
+Connect Scan Timing: About 65.47% done; ETC: 14:18 (0:01:43 remaining)
+Increasing send delay for 10.10.11.125 from 40 to 80 due to max_successful_tryno increase to 8
+Increasing send delay for 10.10.11.125 from 80 to 160 due to max_successful_tryno increase to 9
+Connect Scan Timing: About 70.01% done; ETC: 14:20 (0:01:59 remaining)
+Connect Scan Timing: About 73.02% done; ETC: 14:22 (0:02:19 remaining)
+Connect Scan Timing: About 81.25% done; ETC: 14:23 (0:01:52 remaining)
+Connect Scan Timing: About 87.44% done; ETC: 14:24 (0:01:22 remaining)
+Connect Scan Timing: About 93.00% done; ETC: 14:25 (0:00:49 remaining)
+Completed Connect Scan at 14:26, 750.11s elapsed (8340 total ports)
+Nmap scan report for 10.10.11.125
+Host is up (0.31s latency).
+Not shown: 8321 closed ports
+PORT      STATE    SERVICE
+22/tcp    open     ssh
+80/tcp    open     http
+447/tcp   filtered ddm-dfm
+479/tcp   filtered iafserver
+1957/tcp  filtered unix-status
+2511/tcp  filtered metastorm
+2585/tcp  filtered netx-server
+2807/tcp  filtered cspmulti
+3226/tcp  filtered isi-irp
+3788/tcp  filtered isrp-port
+4211/tcp  filtered vrml-multi-use
+8877/tcp  filtered unknown
+9387/tcp  filtered d2dconfig
+10042/tcp filtered unknown
+18769/tcp filtered ique
+22003/tcp filtered optohost003
+23004/tcp filtered inovaport5
+25900/tcp filtered tasp-net
+59684/tcp filtered unknown
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 756.31 seconds

@@ -1,0 +1,36 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-12-12 13:51 EST
+Initiating Ping Scan at 13:51
+Scanning 10.10.11.105 [2 ports]
+Completed Ping Scan at 13:51, 0.42s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 13:51
+Completed Parallel DNS resolution of 1 host. at 13:51, 0.04s elapsed
+Initiating Connect Scan at 13:51
+Scanning 10.10.11.105 [8340 ports]
+Discovered open port 80/tcp on 10.10.11.105
+Discovered open port 22/tcp on 10.10.11.105
+Increasing send delay for 10.10.11.105 from 0 to 5 due to max_successful_tryno increase to 4
+Connect Scan Timing: About 5.00% done; ETC: 14:02 (0:09:49 remaining)
+Connect Scan Timing: About 13.93% done; ETC: 13:58 (0:06:17 remaining)
+Increasing send delay for 10.10.11.105 from 5 to 10 due to max_successful_tryno increase to 5
+Increasing send delay for 10.10.11.105 from 10 to 20 due to max_successful_tryno increase to 6
+Increasing send delay for 10.10.11.105 from 20 to 40 due to max_successful_tryno increase to 7
+Connect Scan Timing: About 17.73% done; ETC: 14:00 (0:07:02 remaining)
+Connect Scan Timing: About 23.65% done; ETC: 14:00 (0:06:31 remaining)
+Connect Scan Timing: About 32.06% done; ETC: 13:59 (0:05:20 remaining)
+Connect Scan Timing: About 40.27% done; ETC: 13:59 (0:04:28 remaining)
+Connect Scan Timing: About 48.64% done; ETC: 13:58 (0:03:43 remaining)
+Connect Scan Timing: About 57.22% done; ETC: 13:58 (0:03:00 remaining)
+Connect Scan Timing: About 64.96% done; ETC: 13:58 (0:02:26 remaining)
+Connect Scan Timing: About 73.07% done; ETC: 13:58 (0:01:51 remaining)
+Connect Scan Timing: About 81.76% done; ETC: 13:58 (0:01:14 remaining)
+Connect Scan Timing: About 90.23% done; ETC: 13:58 (0:00:39 remaining)
+Completed Connect Scan at 13:58, 405.54s elapsed (8340 total ports)
+Nmap scan report for 10.10.11.105
+Host is up (0.32s latency).
+Not shown: 8338 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+80/tcp open  http
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 406.18 seconds

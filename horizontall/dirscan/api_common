@@ -1,0 +1,17 @@
+# FFUF Report
+
+  Command line : `ffuf -u http://api-prod.horizontall.htb/FUZZ -w /usr/share/wordlists/dirb/common.txt -of md -o dirscan/api_common`
+  Time: 2021-12-12T14:05:39-05:00
+
+  | FUZZ | URL | Redirectlocation | Position | Status Code | Content Length | Content Words | Content Lines | Content Type | ResultFile |
+  | :- | :-- | :--------------- | :---- | :------- | :---------- | :------------- | :------------ | :--------- | :----------- |
+  |  | http://api-prod.horizontall.htb/ |  | 1 | 200 | 413 | 76 | 20 | text/html; charset=utf-8 |  |
+  | admin | http://api-prod.horizontall.htb/admin |  | 286 | 200 | 854 | 98 | 17 | text/html; charset=utf-8 |  |
+  | Admin | http://api-prod.horizontall.htb/Admin |  | 287 | 200 | 854 | 98 | 17 | text/html; charset=utf-8 |  |
+  | ADMIN | http://api-prod.horizontall.htb/ADMIN |  | 288 | 200 | 854 | 98 | 17 | text/html; charset=utf-8 |  |
+  | favicon.ico | http://api-prod.horizontall.htb/favicon.ico |  | 1575 | 200 | 1150 | 4 | 1 | image/x-icon |  |
+  | index.html | http://api-prod.horizontall.htb/index.html |  | 2020 | 200 | 413 | 76 | 20 | text/html; charset=utf-8 |  |
+  | reviews | http://api-prod.horizontall.htb/reviews |  | 3425 | 200 | 507 | 21 | 1 | application/json; charset=utf-8 |  |
+  | robots.txt | http://api-prod.horizontall.htb/robots.txt |  | 3436 | 200 | 121 | 19 | 4 | text/plain; charset=utf-8 |  |
+  | users | http://api-prod.horizontall.htb/users |  | 4245 | 403 | 60 | 1 | 1 | application/json; charset=utf-8 |  |
+  

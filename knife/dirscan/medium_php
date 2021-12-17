@@ -1,0 +1,36 @@
+# FFUF Report
+
+  Command line : `ffuf -u http://10.10.10.242/FUZZ -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt -of md -o dirscan/medium_php -e php`
+  Time: 2021-06-26T15:04:11-04:00
+
+  | FUZZ | URL | Redirectlocation | Position | Status Code | Content Length | Content Words | Content Lines | Content Type | ResultFile |
+  | :- | :-- | :--------------- | :---- | :------- | :---------- | :------------- | :------------ | :--------- | :----------- |
+  | # Copyright 2007 James Fisher | http://10.10.10.242/# Copyright 2007 James Fisher |  | 5 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # | http://10.10.10.242/# |  | 3 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # | http://10.10.10.242/# |  | 19 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # directory-list-2.3-medium.txtphp | http://10.10.10.242/# directory-list-2.3-medium.txtphp |  | 2 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # license, visit http://creativecommons.org/licenses/by-sa/3.0/  | http://10.10.10.242/# license, visit http://creativecommons.org/licenses/by-sa/3.0/  |  | 13 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # license, visit http://creativecommons.org/licenses/by-sa/3.0/ php | http://10.10.10.242/# license, visit http://creativecommons.org/licenses/by-sa/3.0/ php |  | 14 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # Attribution-Share Alike 3.0 License. To view a copy of this  | http://10.10.10.242/# Attribution-Share Alike 3.0 License. To view a copy of this  |  | 11 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # Suite 300, San Francisco, California, 94105, USA. | http://10.10.10.242/# Suite 300, San Francisco, California, 94105, USA. |  | 17 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # Suite 300, San Francisco, California, 94105, USA.php | http://10.10.10.242/# Suite 300, San Francisco, California, 94105, USA.php |  | 18 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # Attribution-Share Alike 3.0 License. To view a copy of this php | http://10.10.10.242/# Attribution-Share Alike 3.0 License. To view a copy of this php |  | 12 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # on atleast 2 different hostsphp | http://10.10.10.242/# on atleast 2 different hostsphp |  | 24 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # or send a letter to Creative Commons, 171 Second Street,  | http://10.10.10.242/# or send a letter to Creative Commons, 171 Second Street,  |  | 15 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # Priority ordered case sensative list, where entries were found  | http://10.10.10.242/# Priority ordered case sensative list, where entries were found  |  | 21 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # directory-list-2.3-medium.txt | http://10.10.10.242/# directory-list-2.3-medium.txt |  | 1 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | #php | http://10.10.10.242/#php |  | 4 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | #php | http://10.10.10.242/#php |  | 26 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # on atleast 2 different hosts | http://10.10.10.242/# on atleast 2 different hosts |  | 23 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # Priority ordered case sensative list, where entries were found php | http://10.10.10.242/# Priority ordered case sensative list, where entries were found php |  | 22 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | #php | http://10.10.10.242/#php |  | 20 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  |  | http://10.10.10.242/ |  | 27 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # Copyright 2007 James Fisherphp | http://10.10.10.242/# Copyright 2007 James Fisherphp |  | 6 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # | http://10.10.10.242/# |  | 25 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # This work is licensed under the Creative Commons  | http://10.10.10.242/# This work is licensed under the Creative Commons  |  | 9 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # | http://10.10.10.242/# |  | 7 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | #php | http://10.10.10.242/#php |  | 8 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # This work is licensed under the Creative Commons php | http://10.10.10.242/# This work is licensed under the Creative Commons php |  | 10 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  | # or send a letter to Creative Commons, 171 Second Street, php | http://10.10.10.242/# or send a letter to Creative Commons, 171 Second Street, php |  | 16 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  |  | http://10.10.10.242/ |  | 90479 | 200 | 5815 | 646 | 221 | text/html; charset=UTF-8 |  |
+  

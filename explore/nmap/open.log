@@ -1,0 +1,31 @@
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-10-28 10:21 EDT
+Initiating Ping Scan at 10:21
+Scanning 10.10.10.247 [2 ports]
+Completed Ping Scan at 10:21, 0.23s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 10:21
+Completed Parallel DNS resolution of 1 host. at 10:21, 0.03s elapsed
+Initiating Connect Scan at 10:21
+Scanning 10.10.10.247 [8340 ports]
+Connect Scan Timing: About 17.56% done; ETC: 10:24 (0:02:26 remaining)
+Increasing send delay for 10.10.10.247 from 0 to 5 due to max_successful_tryno increase to 4
+Increasing send delay for 10.10.10.247 from 5 to 10 due to max_successful_tryno increase to 5
+Stats: 0:01:05 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 33.20% done; ETC: 10:24 (0:02:11 remaining)
+Stats: 0:01:32 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 41.19% done; ETC: 10:24 (0:02:13 remaining)
+Connect Scan Timing: About 52.45% done; ETC: 10:25 (0:01:57 remaining)
+Connect Scan Timing: About 64.78% done; ETC: 10:25 (0:01:26 remaining)
+Connect Scan Timing: About 75.20% done; ETC: 10:25 (0:01:02 remaining)
+Stats: 0:03:32 elapsed; 0 hosts completed (1 up), 1 undergoing Connect Scan
+Connect Scan Timing: About 88.37% done; ETC: 10:25 (0:00:28 remaining)
+Discovered open port 2222/tcp on 10.10.10.247
+Completed Connect Scan at 10:25, 239.30s elapsed (8340 total ports)
+Nmap scan report for 10.10.10.247
+Host is up (0.22s latency).
+Not shown: 8338 closed ports
+PORT     STATE    SERVICE
+2222/tcp open     EtherNetIP-1
+5555/tcp filtered freeciv
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 239.67 seconds

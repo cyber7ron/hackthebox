@@ -1,0 +1,63 @@
+Starting Nmap 7.80 ( https://nmap.org ) at 2021-06-11 11:58 EDT
+Initiating Ping Scan at 11:58
+Scanning 10.10.10.245 [2 ports]
+Completed Ping Scan at 11:58, 0.83s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 11:58
+Completed Parallel DNS resolution of 1 host. at 11:58, 0.06s elapsed
+Initiating Connect Scan at 11:58
+Scanning 10.10.10.245 [8320 ports]
+Discovered open port 80/tcp on 10.10.10.245
+Discovered open port 22/tcp on 10.10.10.245
+Discovered open port 21/tcp on 10.10.10.245
+Increasing send delay for 10.10.10.245 from 0 to 5 due to max_successful_tryno increase to 4
+Increasing send delay for 10.10.10.245 from 5 to 10 due to max_successful_tryno increase to 5
+Increasing send delay for 10.10.10.245 from 10 to 20 due to max_successful_tryno increase to 6
+Connect Scan Timing: About 3.61% done; ETC: 12:13 (0:13:48 remaining)
+Connect Scan Timing: About 13.45% done; ETC: 12:06 (0:06:33 remaining)
+Connect Scan Timing: About 28.84% done; ETC: 12:04 (0:03:45 remaining)
+Connect Scan Timing: About 40.97% done; ETC: 12:03 (0:02:54 remaining)
+Connect Scan Timing: About 56.22% done; ETC: 12:03 (0:01:58 remaining)
+Connect Scan Timing: About 56.72% done; ETC: 12:04 (0:02:18 remaining)
+Connect Scan Timing: About 56.85% done; ETC: 12:04 (0:02:40 remaining)
+Connect Scan Timing: About 70.10% done; ETC: 12:04 (0:01:43 remaining)
+Connect Scan Timing: About 83.17% done; ETC: 12:04 (0:00:55 remaining)
+Completed Connect Scan at 12:03, 303.33s elapsed (8320 total ports)
+Nmap scan report for 10.10.10.245
+Host is up (0.29s latency).
+Not shown: 8288 closed ports
+PORT      STATE    SERVICE
+21/tcp    open     ftp
+22/tcp    open     ssh
+80/tcp    open     http
+167/tcp   filtered namp
+177/tcp   filtered xdmcp
+283/tcp   filtered rescap
+415/tcp   filtered bnet
+432/tcp   filtered iasd
+525/tcp   filtered timed
+1010/tcp  filtered surf
+1238/tcp  filtered hacl-qs
+1556/tcp  filtered veritas_pbx
+1923/tcp  filtered spice
+2496/tcp  filtered dirgis
+2537/tcp  filtered upgrade
+2542/tcp  filtered udrawgraph
+2569/tcp  filtered sonuscallsig
+3056/tcp  filtered cdl-server
+3573/tcp  filtered tag-ups-1
+3760/tcp  filtered adtempusclient
+4017/tcp  filtered talarian-mcast3
+4090/tcp  filtered omasgport
+4115/tcp  filtered cds
+5747/tcp  filtered tunatic
+6963/tcp  filtered swismgr1
+8379/tcp  filtered cruise-diags
+8865/tcp  filtered unknown
+12345/tcp filtered netbus
+16048/tcp filtered unknown
+28967/tcp filtered unknown
+54741/tcp filtered unknown
+61669/tcp filtered unknown
+
+Read data files from: /usr/bin/../share/nmap
+Nmap done: 1 IP address (1 host up) scanned in 304.30 seconds
