@@ -1,54 +1,58 @@
-Starting Nmap 7.91 ( https://nmap.org ) at 2021-12-06 14:13 EST
-Initiating Ping Scan at 14:13
-Scanning 10.10.11.125 [2 ports]
-Completed Ping Scan at 14:13, 0.50s elapsed (1 total hosts)
-Initiating Parallel DNS resolution of 1 host. at 14:13
-Completed Parallel DNS resolution of 1 host. at 14:13, 5.56s elapsed
-Initiating Connect Scan at 14:13
-Scanning 10.10.11.125 [8340 ports]
-Discovered open port 80/tcp on 10.10.11.125
+Starting Nmap 7.91 ( https://nmap.org ) at 2021-12-23 08:15 EST
+Initiating Ping Scan at 08:15
+Scanning 10.10.11.125 [4 ports]
+Completed Ping Scan at 08:15, 0.40s elapsed (1 total hosts)
+Initiating SYN Stealth Scan at 08:15
+Scanning backdoor.htb (10.10.11.125) [65535 ports]
 Discovered open port 22/tcp on 10.10.11.125
-Increasing send delay for 10.10.11.125 from 0 to 5 due to max_successful_tryno increase to 4
-Connect Scan Timing: About 6.51% done; ETC: 14:21 (0:07:25 remaining)
-Connect Scan Timing: About 21.58% done; ETC: 14:18 (0:03:42 remaining)
-Connect Scan Timing: About 32.94% done; ETC: 14:18 (0:03:05 remaining)
-Increasing send delay for 10.10.11.125 from 5 to 10 due to max_successful_tryno increase to 5
-Connect Scan Timing: About 46.19% done; ETC: 14:17 (0:02:21 remaining)
-Increasing send delay for 10.10.11.125 from 10 to 20 due to max_successful_tryno increase to 6
-Increasing send delay for 10.10.11.125 from 20 to 40 due to max_successful_tryno increase to 7
-Connect Scan Timing: About 57.13% done; ETC: 14:18 (0:02:05 remaining)
-Connect Scan Timing: About 65.47% done; ETC: 14:18 (0:01:43 remaining)
-Increasing send delay for 10.10.11.125 from 40 to 80 due to max_successful_tryno increase to 8
-Increasing send delay for 10.10.11.125 from 80 to 160 due to max_successful_tryno increase to 9
-Connect Scan Timing: About 70.01% done; ETC: 14:20 (0:01:59 remaining)
-Connect Scan Timing: About 73.02% done; ETC: 14:22 (0:02:19 remaining)
-Connect Scan Timing: About 81.25% done; ETC: 14:23 (0:01:52 remaining)
-Connect Scan Timing: About 87.44% done; ETC: 14:24 (0:01:22 remaining)
-Connect Scan Timing: About 93.00% done; ETC: 14:25 (0:00:49 remaining)
-Completed Connect Scan at 14:26, 750.11s elapsed (8340 total ports)
-Nmap scan report for 10.10.11.125
-Host is up (0.31s latency).
-Not shown: 8321 closed ports
+Discovered open port 80/tcp on 10.10.11.125
+SYN Stealth Scan Timing: About 6.44% done; ETC: 08:23 (0:07:30 remaining)
+SYN Stealth Scan Timing: About 6.83% done; ETC: 08:30 (0:13:52 remaining)
+Increasing send delay for 10.10.11.125 from 0 to 5 due to 1198 out of 3991 dropped probes since last increase.
+SYN Stealth Scan Timing: About 7.44% done; ETC: 08:36 (0:18:52 remaining)
+SYN Stealth Scan Timing: About 8.08% done; ETC: 08:40 (0:22:57 remaining)
+SYN Stealth Scan Timing: About 8.65% done; ETC: 08:45 (0:26:34 remaining)
+SYN Stealth Scan Timing: About 9.08% done; ETC: 08:49 (0:30:12 remaining)
+SYN Stealth Scan Timing: About 9.45% done; ETC: 08:53 (0:33:41 remaining)
+SYN Stealth Scan Timing: About 9.81% done; ETC: 08:56 (0:36:57 remaining)
+SYN Stealth Scan Timing: About 10.23% done; ETC: 09:00 (0:39:38 remaining)
+SYN Stealth Scan Timing: About 12.54% done; ETC: 08:58 (0:37:05 remaining)
+Increasing send delay for 10.10.11.125 from 5 to 10 due to max_successful_tryno increase to 4
+SYN Stealth Scan Timing: About 14.68% done; ETC: 08:55 (0:33:48 remaining)
+SYN Stealth Scan Timing: About 16.62% done; ETC: 08:53 (0:31:41 remaining)
+SYN Stealth Scan Timing: About 19.06% done; ETC: 08:52 (0:29:35 remaining)
+Discovered open port 1337/tcp on 10.10.11.125
+SYN Stealth Scan Timing: About 21.65% done; ETC: 08:51 (0:27:33 remaining)
+SYN Stealth Scan Timing: About 24.35% done; ETC: 08:49 (0:25:32 remaining)
+SYN Stealth Scan Timing: About 28.99% done; ETC: 08:45 (0:21:21 remaining)
+SYN Stealth Scan Timing: About 29.69% done; ETC: 08:48 (0:22:54 remaining)
+SYN Stealth Scan Timing: About 30.59% done; ETC: 08:51 (0:24:33 remaining)
+SYN Stealth Scan Timing: About 31.32% done; ETC: 08:54 (0:26:21 remaining)
+SYN Stealth Scan Timing: About 31.67% done; ETC: 08:57 (0:28:18 remaining)
+SYN Stealth Scan Timing: About 36.69% done; ETC: 08:57 (0:26:10 remaining)
+SYN Stealth Scan Timing: About 40.09% done; ETC: 08:55 (0:24:00 remaining)
+SYN Stealth Scan Timing: About 44.36% done; ETC: 08:55 (0:21:58 remaining)
+SYN Stealth Scan Timing: About 48.82% done; ETC: 08:54 (0:19:56 remaining)
+SYN Stealth Scan Timing: About 52.96% done; ETC: 08:54 (0:17:55 remaining)
+Increasing send delay for 10.10.11.125 from 10 to 20 due to max_successful_tryno increase to 5
+Increasing send delay for 10.10.11.125 from 20 to 40 due to max_successful_tryno increase to 6
+Increasing send delay for 10.10.11.125 from 40 to 80 due to max_successful_tryno increase to 7
+SYN Stealth Scan Timing: About 64.68% done; ETC: 09:01 (0:16:01 remaining)
+SYN Stealth Scan Timing: About 72.61% done; ETC: 09:06 (0:13:44 remaining)
+SYN Stealth Scan Timing: About 79.05% done; ETC: 09:09 (0:11:13 remaining)
+SYN Stealth Scan Timing: About 84.85% done; ETC: 09:12 (0:08:32 remaining)
+SYN Stealth Scan Timing: About 90.26% done; ETC: 09:14 (0:05:41 remaining)
+SYN Stealth Scan Timing: About 95.45% done; ETC: 09:16 (0:02:45 remaining)
+Completed SYN Stealth Scan at 09:17, 3699.93s elapsed (65535 total ports)
+Nmap scan report for backdoor.htb (10.10.11.125)
+Host is up (0.32s latency).
+Not shown: 65531 closed ports
 PORT      STATE    SERVICE
 22/tcp    open     ssh
 80/tcp    open     http
-447/tcp   filtered ddm-dfm
-479/tcp   filtered iafserver
-1957/tcp  filtered unix-status
-2511/tcp  filtered metastorm
-2585/tcp  filtered netx-server
-2807/tcp  filtered cspmulti
-3226/tcp  filtered isi-irp
-3788/tcp  filtered isrp-port
-4211/tcp  filtered vrml-multi-use
-8877/tcp  filtered unknown
-9387/tcp  filtered d2dconfig
-10042/tcp filtered unknown
-18769/tcp filtered ique
-22003/tcp filtered optohost003
-23004/tcp filtered inovaport5
-25900/tcp filtered tasp-net
-59684/tcp filtered unknown
+1337/tcp  open     waste
+37927/tcp filtered unknown
 
 Read data files from: /usr/bin/../share/nmap
-Nmap done: 1 IP address (1 host up) scanned in 756.31 seconds
+Nmap done: 1 IP address (1 host up) scanned in 3700.61 seconds
+           Raw packets sent: 74246 (3.267MB) | Rcvd: 83396 (5.232MB)

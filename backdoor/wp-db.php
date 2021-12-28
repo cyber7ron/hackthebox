@@ -1,0 +1,1 @@
+../../../wp-db.php../../../wp-db.php../../../wp-db.php<script>window.close()</script>

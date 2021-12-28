@@ -1,0 +1,15 @@
+POST /wp-login.php HTTP/1.1
+Host: backdoor.htb
+User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:78.0) Gecko/20100101 Firefox/78.0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5
+Accept-Encoding: gzip, deflate
+Referer: http://backdoor.htb/wp-login.php?registration=enabled
+Content-Type: application/x-www-form-urlencoded
+Content-Length: 99
+Origin: http://backdoor.htb
+Connection: close
+Cookie: wordpress_test_cookie=WP%20Cookie%20check
+Upgrade-Insecure-Requests: 1
+
+log=test&pwd=test&wp-submit=Log+In&redirect_to=http%3A%2F%2Fbackdoor.htb%2Fwp-admin%2F&testcookie=1

