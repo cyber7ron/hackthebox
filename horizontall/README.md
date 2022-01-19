@@ -42,3 +42,71 @@ tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      
 we can upload php shell on box. and 1337 is open for developement purpose.
 
 check if mongo db is present on server . try to login
+
+mysql ver 14.14
+
+/etc/apache2/sites-available/000-default.conf 
+
+```
+══╣ Possible private SSH keys were found!
+/opt/strapi/myapi/node_modules/spdy/test/fixtures.js
+/opt/strapi/myapi/node_modules/selfsigned/README.md
+/opt/strapi/myapi/node_modules/nodemailer-fetch/test/fetch-test.js
+/opt/strapi/myapi/node_modules/public-encrypt/test/rsa.1024.priv
+/opt/strapi/myapi/node_modules/public-encrypt/test/test_key.pem
+/opt/strapi/myapi/node_modules/public-encrypt/test/rsa.pass.priv
+/opt/strapi/myapi/node_modules/public-encrypt/test/pass.1024.priv
+/opt/strapi/myapi/node_modules/public-encrypt/test/rsa.2028.priv
+/opt/strapi/myapi/node_modules/public-encrypt/test/ec.priv
+/opt/strapi/myapi/node_modules/public-encrypt/test/test_rsa_privkey_encrypted.pem
+/opt/strapi/myapi/node_modules/public-encrypt/test/test_rsa_privkey.pem
+/opt/strapi/myapi/node_modules/public-encrypt/test/ec.pass.priv
+/opt/strapi/myapi/node_modules/request/node_modules/http-signature/http_signing.md
+/opt/strapi/myapi/node_modules/http-signature/http_signing.md
+
+
+```
+
+
+/usr/share/openssh/sshd_config
+
+
+```
+https://book.hacktricks.xyz/linux-unix/privilege-escalation#open-shell-sessions
+tmux 2.6
+
+
+```
+
+```
+-rw-rw-r-- 1 strapi strapi 351 May 26  2021 /opt/strapi/myapi/config/environments/development/database.json
+{
+  "defaultConnection": "default",
+  "connections": {
+    "default": {
+      "connector": "strapi-hook-bookshelf",
+      "settings": {
+        "client": "mysql",
+        "database": "strapi", 
+        "host": "127.0.0.1",
+        "port": 3306,
+        "username": "developer",
+        "password": "#J!:F9Zt2u"
+      },
+      "options": {}
+    }
+  }
+}
+
+
+```
+
+
+hash found:
+
+```
+864892F451E37073B4B4F3CE01C26A02C3EFE03B
+$2a$10$cZaQFW/NiT3MBsBlI74ddOMW.jAwkQ7oiJnddpNY35I4hsA7vb2c.
+FFE7D25121423869EB3DCC48D3E8C99C6E3530A7
+
+```
